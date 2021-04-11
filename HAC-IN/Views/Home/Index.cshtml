@@ -1,0 +1,84 @@
+﻿@{
+    Layout = null;
+}
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+</head>
+<html>
+<body>
+    <h1>HAC-IN</h1>
+    <div id="NavBarBox">
+        <nav id="navbar">
+            <ul id="navbarul">
+                <li style="margin-left:20px; margin-right:20px"><a asp-controller="Home" asp-action="Index"><strong>Login</strong></a></li>
+                <li style="margin-right:20px"><a asp-controller="Registration" asp-action="NewUser"><strong>Register</strong></a></li>
+                <li><a asp-controller="Password" asp-action="Reset"><strong>Reset Password</strong></a></li>
+            </ul>
+        </nav>
+    </div>
+    <h3 id="HomeH3">Hunting Area Check-In</h3>
+    <div id="maindiv">
+        <div id="LeftHomeGrid">
+            <div id="LoginBox">
+                <form class="Login" action="index.html" method="post">
+                    <h3 id="LoginH3">Login</h3>
+                    <div id="UsernameDiv">
+                        <label for="Username(email)">Username(email):</label><br>
+                        <input type="text" name="Username" value="" placeholder="johnsmith@Example.com">
+                    </div><br>
+                    <div id="PasswordDiv">
+                        <label for="Password">Password:</label><br>
+                        <input type="text" name="Password" value="" placeholder="***********">
+                    </div><br>
+                    <div id="loginbutton"><input type="button" name="Login" value="Login"></div><br>
+                    <div class="regpasslink"><a asp-controller="Registration" asp-action="NewUser">Need to Register?</a></div><br>
+                    <div class="regpasslink"><a asp-controller="Password" asp-action="Reset">Forgot your Password?</a></div><br>
+                </form>
+            </div>
+            <div id="ContactBox">
+                <h3 id="ContactH3">Contact Numbers</h3>
+                <p id="contactp">
+                    Having issues with HAC-IN?<br><br>
+                    Please contact:<br>
+                    <br>
+                    Josh's Archery Shop <br>
+                    1602 Fox Trail <br>
+                    Harker Heights, TX <br>
+                    347-675-8901 <br>
+                    <br>
+                    <br>
+                    Hogs For A Cause TX <br>
+                    52086-1 Yana Ct. <br>
+                    Fort Hood, TX <br>
+                    123-456-7890 <br>
+                </p>
+            </div>
+        </div>
+        <div id="RightHomeGrid">
+            <div id="ImageBox">
+                <img src="https://bloximages.newyork1.vip.townnews.com/columbiamissourian.com/content/tncms/assets/v3/editorial/5/2a/52af0c08-3a68-11e6-8c86-576d0fd9ada7/576ee6e9b429f.image.jpg"
+                     class="imgconimg">
+            </div>
+            <div id="ButtonBox">
+                <span>
+                    <button class="btnconbtn">
+                        <a asp-controller="CheckIn" asp-action="CheckIn">Check In</a>
+                    </button>
+                </span>
+                <span>
+                    <button class="btnconbtn">
+                        <a asp-controller="CheckOut" asp-action="CheckOut">Check Out</a>
+                    </button>
+                </span>
+                <span>
+                    <button class="btnconbtn">
+                        <a asp-controller="AreaMap" asp-action="AreaMap">Area Map</a>
+                    </button>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

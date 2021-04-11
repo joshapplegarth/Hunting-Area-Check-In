@@ -1,0 +1,43 @@
+﻿@model AreaMap
+@{
+    Layout = null;
+}
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+</head>
+<html>
+<body>
+    <h1>HAC-IN</h1>
+    <div id="NavBarBox">
+        <nav id="navbar">
+            <ul id="navbarul">
+                <li style="margin-left: 20px; margin-right: 20px"><a asp-controller="Home" asp-action="Index"><strong>Login</strong></a></li>
+                <li style="margin-right:20px"><a asp-controller="Registration" asp-action="NewUser"><strong>Register</strong></a></li>
+                <li><a asp-controller="Password" asp-action="Reset"><strong>Reset Password</strong></a></li>
+            </ul>
+        </nav>
+    </div>
+    <h3 id="HomeH3">Hunting Area Check-In</h3>
+    <h1 style="text-align: center; margin-bottom: 0">Check In</h1><br />
+    <center>
+        <span>
+            <label for="Date: "><strong>Date: </strong></label>
+            <input style="margin-right:215px" type="date" name="date" value="">
+            <label for="Game: "><strong>Game: </strong></label>
+            <select style="margin-right:215px" name="Game" id="Game">
+                <option value="stand maintenance">Stand Maintenance</option>
+                <option value="deer">Deer</option>
+                <option value="wild hog">Wild Hog</option>
+                <option value="turkey">Turkey</option>
+                <option value="small game">Small Game</option>
+                <option value="fishing">Fishing</option>
+            </select>
+            <input type="button" name="Login" value="View Available Training Areas">
+        </span>
+    </center>
+    <center><img style="margin-top: 100px" src="https://webtrac.mwr.army.mil/webtrac103/wbimages/MILT//Hood/HUNTTRAC/trainingareas3.jpg"></center>
+</body>
+</html>
+

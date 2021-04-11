@@ -1,0 +1,136 @@
+﻿/* INDEX */
+/* INDEX */
+/* INDEX */
+
+
+head {
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+div {
+}
+
+#HomeH1 {
+    text-align: left;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#NavBarBox {
+    margin: 0 auto;
+    border: 2px black solid;
+    display: flex;
+    float: right;
+}
+
+#navbar {
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+#navbarul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#HomeH3 {
+    margin-top: 0;
+    padding: 0;
+}
+
+#maindiv {
+    display: flex;
+}
+
+#LeftHomeGrid {
+    display: grid;
+    grid-template-columns: 2;
+    grid-gap: 5px;
+    margin-right: 5px;
+}
+
+#LoginBox {
+    margin: 0 auto;
+    border: 2px black solid;
+    text-align: center;
+}
+
+#LoginH3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#UsernameDiv {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+#PasswordDiv {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+#loginButton {
+}
+
+.regpasslink {
+    text-align: center;
+    font-size: 10px;
+}
+
+#ContactBox {
+    border: 2px black solid;
+}
+
+#ContactH3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#contactp {
+    margin-left: 8px;
+    margin-right: 8px;
+    white-space: nowrap;
+}
+
+#RightHomeGrid {
+    display: grid;
+    grid-template-columns: 2;
+    grid-gap: 5px;
+}
+
+#ImageBox {
+    width: 0 auto;
+    height: 0 auto;
+    border: 2px black solid;
+}
+
+.imgconimg {
+    margin: 0 auto;
+    width: 100%;
+    float: right;
+    padding: 0;
+}
+
+#ButtonBox {
+    width: 0 auto;
+    height: 0 auto;
+    border: 2px black solid;
+    text-align: center;
+}
+
+.btnconbtn {
+    font-weight: bold;
+    font-size: 20px;
+    height: 100px;
+    width: 160px;
+    margin: 20px;
+}
+/* INDEX */

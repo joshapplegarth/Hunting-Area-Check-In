@@ -1,0 +1,129 @@
+﻿@{
+    Layout = null;
+}
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+</head>
+<html>
+<body>
+    <h1>HAC-IN</h1>
+    <div id="NavBarBox">
+        <nav id="navbar">
+            <ul id="navbarul">
+                <li style="margin-left: 20px; margin-right: 20px"><a asp-controller="Home" asp-action="Index"><strong>Login</strong></a></li>
+                <li style="margin-right:20px"><a asp-controller="Registration" asp-action="NewUser"><strong>Register</strong></a></li>
+                <li><a asp-controller="Password" asp-action="Reset"><strong>Reset Password</strong></a></li>
+            </ul>
+        </nav>
+    </div>
+    <h3 id="HomeH3">Hunting Area Check-In</h3>
+
+
+    <div style="display:flex; ">
+
+
+        <div style="display:grid; grid-template-columns: 2; grid-gap:5px; margin-right:5px">
+            <div class="LoginContainer" style="margin:0 auto; border:2px black solid;">
+                <form class="Login" action="index.html" method="post">
+                    <h3 style="text-align:center; margin-top:10px">Login</h3>
+                    <div style="margin-left:20px; margin-right:20px;">
+                        <label for="Username(email)"><strong>Username(email):</strong></label><br>
+                        <input type="text" name="Username" value="" placeholder="johnsmith@Example.com">
+                    </div><br>
+                    <div style="margin-left:20px; margin-right:20px;">
+                        <label for="Password"><strong>Password:</strong></label><br>
+                        <input type="text" name="Password" value="" placeholder="***********">
+                    </div><br>
+                    <div style="text-align:center"><input type="button" name="Login" value="Login"></div><br>
+                    <div style="text-align:center; font-size:10px"><a asp-controller="Registration" asp-action="NewUser">Need to Register?</a></div><br>
+                    <div style="text-align:center; font-size:10px"><a asp-controller="Password" asp-action="Reset">Forgot your Password?</a></div><br>
+                </form>
+            </div>
+
+            <div class="LoginContainer" style="border:2px black solid;">
+                <h3 style="text-align:center; margin-top:10px">Contact Numbers</h3>
+                <p style="margin-left:8px; margin-right:8px; white-space: nowrap">
+                    Having issues with HAC-IN?<br><br>
+                    Please contact:<br>
+                    <br>
+                    Josh's Archery Shop <br>
+                    1602 Fox Trail <br>
+                    Harker Heights, TX <br>
+                    347-675-8901 <br>
+                    <br>
+                    <br>
+                    Hogs For A Cause TX <br>
+                    52086-1 Yana Ct. <br>
+                    Fort Hood, TX <br>
+                    123-456-7890 <br>
+                </p>
+            </div>
+        </div>
+
+
+        <div style="display:grid; grid-template-columns: 2; grid-gap: 5px">
+            <div class="RegistrationContainer" style="background: lightgrey; width: 138%; border: 2px black solid;">
+                <form>
+                    <h3 style="margin-top: 10px; margin-left: 20px; text-align: left">Reset Password</h3>
+                    <div>
+                        <label style="margin-left: 20px; margin-right: 150px" for="First Name"><strong> First Name: </strong></label>
+                        <label for="Last Name"><strong> Last Name: </strong></label>
+                    </div>
+                    <div>
+                        <input style="margin-left: 20px; margin-right: 50px" type="text" name="First Name" value="" placeholder="John">
+                        <input type="text" name="Last Name" value="" placeholder="Smith">
+                    </div><br />
+                    <div>
+                        <label style="margin-left: 20px" for="Email"><strong> Email: </strong></label><br />
+                        <input style="margin-left: 20px; width: 430px" type="text" name="Email" value="" placeholder="john.smith@Example.com">
+                    </div><br />
+                    <div>
+                        <input style="margin-left: 100px" type="checkbox" name="Agree" value="">
+                        <label style="font-size: 12px" for="Agree"> By checking this box you agree to all Terms and Service Agreements </label>
+                    </div><br />
+                    <div style="text-align:center">
+                        <input style="width: 125px" type="button" name="Register" value="Reset">
+                    </div><br />
+
+                    <div style="font-size: 14px; margin-top: 120px">
+                        <p>
+                            An email will be sent to your Email associated with your HAC-IN accunt with a link to reset your password.
+                        </p><br />
+                        <p style="font-size: 14px;">
+                            If you have forgotten your username(email), please contact Josh's Archery Shop to have your account reset.
+                        </p>
+                    </div>
+                </form>
+
+
+
+
+
+
+
+
+            </div>
+
+            <div class="ButtonContainer" style="width: 0 auto; border:2px black solid; text-align: center">
+                <span>
+                    <button style="font-weight: bold; font-size:20px; height:100px; width:160px; margin: 20px">
+                        <a asp-controller="CheckIn" asp-action="CheckIn">Check In</a>
+                    </button>
+                </span>
+                <span>
+                    <button style="font-weight: bold; font-size:20px; height:100px; width:160px; margin: 20px">
+                        <a asp-controller="CheckOut" asp-action="CheckOut">Check Out</a>
+                    </button>
+                </span>
+                <span>
+                    <button style="font-weight: bold; font-size:20px; height:100px; width:160px; margin: 20px">
+                        <a asp-controller="AreaMap" asp-action="AreaMap">Area Map</a>
+                    </button>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

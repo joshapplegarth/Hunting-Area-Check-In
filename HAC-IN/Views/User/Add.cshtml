@@ -1,0 +1,35 @@
+﻿@model User
+
+    <h1> Add New User</h1>
+
+    <form method="post">
+        HuntID:
+        <input asp-for="Huntid" />
+        <br />
+        First Name:
+        <input asp-for="Firstname" />
+        <br />
+        Last Name:
+        <input asp-for="Lastname" />
+        <br />
+        Phone:
+        <input asp-for="Phone" type="tel" />
+        <br />
+        Email:
+        <input asp-for="Email" type="email" />
+        <br />
+        Password:
+        <input asp-for="Password" type="password" />
+        <br />
+        Role:
+        <input asp-for="Role" />
+        <br />
+        TAid:
+        <input asp-for="TAid" />
+        <br />
+        TADate:
+        <input asp-for="TAdate" type="date" />
+        <br />
+        <input type="submit" value="Add User" />
+
+    </form>

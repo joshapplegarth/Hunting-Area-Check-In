@@ -1,0 +1,24 @@
+﻿@model User
+
+@Model.Huntid
+<br />
+@Model.Firstname
+<br />
+@Model.Lastname
+<br />
+@Model.Phone
+<br />
+@Model.Email
+<br />
+@Model.Password
+<br />
+@Model.Role
+<br />
+@Model.TAid
+<br />
+@Model.TAdate
+<br />
+
+
+<a asp-action="Edit" class="btn btn-warning" asp-route-id="@Model.Huntid">Edit User</a>
+
